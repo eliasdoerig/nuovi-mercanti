@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Grotesque;
+    font-weight: 400;
+    src: url('assets/fonts/GrotesqueMTStd-Light/GrotesqueMTStd-Light.woff');
+}
+@font-face {
+    font-family: Grotesque;
+    font-weight: 800;
+    src: url('assets/fonts/GrotesqueMTStd-Bold/GrotesqueMTStd-Bold.woff');
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Grotesque, Helvetica, sans-serif;
+}
+
+body{
+    @media screen and (min-width: 1023px) {
+        display: flex;
+    }
+}
+
+a{
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+    display: block;
+}
+
+figure{
+    margin: 1rem 0;
+}
+
+figcaption{
+    margin: .25rem 0 0;
+}
+
+h1, h2, h3{
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0;
+}
+
+* + h1,
+* + h2,
+* + h3{
+    margin-top: 1.5rem;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 2rem;
+}
+
+
+header{
+    background: white;
+    @media screen and (min-width: 1023px) {
+        > div{
+            position: sticky;
+            top: 10px;
+        }
+        width: 400px;  
+    }
+    padding: 10px;
+    ul{
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+        &.active{
+            font-style: italic;
+            &::before{
+                content: "— ";
+            }
+        }
+    }
+}
+
+main{
+    padding: 10px;
+    max-width: 600px;
+}
