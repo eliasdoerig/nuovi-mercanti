@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.15",
     "sass": "^1.32.13"
   }
 }
