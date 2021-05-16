@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^5.0.2",
+    "parcel": "^2.0.0-beta.2",
     "postcss": "^8.2.15",
     "sass": "^1.32.13"
   }
