@@ -67,7 +67,10 @@ p{
 ul{
     list-style-type: none;
     margin: 0;
-    padding: 0 0 0 2rem;
+    padding: 0;
+    &.rientro{
+        padding: 0 0 0 1.5rem;
+    }
 }
 
 
