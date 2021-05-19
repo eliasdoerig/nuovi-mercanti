@@ -93,7 +93,7 @@ header{
             text-decoration: underline;
         }
         &.active{
-            font-style: italic;
+            //font-style: italic;
             &::before{
                 content: "— ";
             }
