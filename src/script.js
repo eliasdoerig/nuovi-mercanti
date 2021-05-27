@@ -21,10 +21,14 @@
         let current = '';
         capitoli.forEach(capitolo => {
             const capitoloTop = capitolo.offsetTop - 100;
+
             if(this.pageYOffset > capitoloTop){
                 current = capitolo.getAttribute('id');
             }
         });
+        if(window.pageYOffset + window.innerHeight > document.body.clientHeight - 100){
+            current = capitoli.length;
+        }
         
         navItems.forEach(item => item.classList.remove('active'));
         if(current){
